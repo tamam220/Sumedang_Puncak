@@ -69,7 +69,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(44, 94, 46, 0.9); /* Hijau transparan */
+  background-color: rgba(255, 255,255,0.9); /* Hijau transparan */
   padding: 1rem 5%;
   position: fixed;
   width: 100%;
@@ -82,8 +82,22 @@ section {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
-  color: white;
+  color: black;
   text-decoration: none;
+}
+.nav-logo {
+    display: flex; /* Untuk mensejajarkan ikon dan teks */
+    align-items: center; /* Untuk memposisikan ikon dan teks di tengah vertikal */
+    font-size: 1rem; /* Ukuran teks logo */
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.logo-icon {
+    height: 35px; /* Sesuaikan tinggi ikon */
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+    filter: invert(100%); /* Membuat ikon hitam jadi putih agar terlihat di navbar hijau */
 }
 
 .nav-links {
@@ -97,7 +111,7 @@ section {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 600;
   padding-bottom: 5px;
   position: relative;
@@ -138,7 +152,7 @@ section {
 .hamburger-menu {
   display: none; /* Sembunyikan di desktop */
   font-size: 1.8rem;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
