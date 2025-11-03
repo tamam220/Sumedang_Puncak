@@ -1,7 +1,3 @@
-/* ... (kode CSS dari jawaban sebelumnya) ... */
-
-/* ======== TENTANG KAMI ======== */
-/* ======== GLOBAL & ROOT ======== */
 :root {
   --primary-color: #2c5e2e; /* Hijau tua */
   --secondary-color: #f3a847; /* Oranye/Kuning */
@@ -355,36 +351,29 @@ section {
     margin-right: auto;
 }
 
-/* ================================== */
-/* ======== BARU: HALAMAN DETAIL (v3) ======== */
-/* ================================== */
-
 .detail-gunung {
-    max-width: 1200px; /* Lebar maksimal konten */
+    max-width: 1200px; 
     
-    /* Margin atas: 80px (tinggi navbar) + 2rem (jarak tambahan yang Anda inginkan)
-       Margin lain: auto (kiri/kanan) dan 2rem (bawah)
-    */
     margin: calc(80px + 2rem) auto 2rem auto; 
     
-    padding: 0 1rem; /* Padding samping untuk responsif */
+    padding: 0 1rem; 
 }
 /* === BAGIAN ATAS DENGAN GAMBAR & TEKS SPLIT === */
 .hero-split-layout {
     display: grid;
-    grid-template-columns: 1fr 1.2fr; /* Gambar (kiri) 1 bagian, Teks (kanan) 1.2 bagian */
-    gap: 2rem; /* Jarak antara gambar dan teks */
-    margin-bottom: 2rem; /* Jarak ke konten di bawahnya */
-    align-items: start; /* Pastikan konten atas rata dengan gambar */
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2rem; 
+    margin-bottom: 2rem; 
+    align-items: start; 
 }
 
 .hero-image-container img {
     width: 100%;
-    height: auto; /* Agar gambar proporsional */
-    max-height: 400px; /* Batasi tinggi agar tidak terlalu besar */
+    height: auto; 
+    max-height: 400px;
     object-fit: cover;
-    border-radius: 8px; /* Sudut membulat */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Bayangan ringan */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .hero-text-content h1 {
@@ -395,9 +384,9 @@ section {
     line-height: 1.2;
 }
 
-/* Badge lokasi */
+
 .detail-badge {
-    display: inline-flex; /* Menggunakan flex untuk ikon dan teks */
+    display: inline-flex; 
     align-items: center;
     background: var(--primary-color);
     color: white;
@@ -408,7 +397,7 @@ section {
     margin-bottom: 1.5rem;
 }
 .detail-badge i {
-    margin-right: 8px; /* Jarak antara ikon dan teks */
+    margin-right: 8px; 
     font-size: 1.1rem;
 }
 
@@ -421,9 +410,6 @@ section {
 
 
 /* === BAGIAN KONTEN BAWAH (FULL WIDTH) === */
-.detail-content-full {
-    /* Padding jika perlu, atau bisa langsung pakai padding .detail-gunung */
-}
 
 .detail-content-full h3 {
     font-size: 2rem;
@@ -444,33 +430,33 @@ section {
     width: auto;
     padding: 15px 35px;
     font-size: 1.1rem;
-    display: inline-block; /* Agar bisa di tengah jika ingin */
+    display: inline-block; 
 }
 
 /* === RESPONSIVE UNTUK MOBILE === */
 @media (max-width: 768px) {
     .hero-split-layout {
-        grid-template-columns: 1fr; /* Tumpuk menjadi satu kolom di mobile */
+        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
     .hero-image-container img {
-        max-height: 250px; /* Kurangi tinggi gambar di mobile */
-        border-radius: 0; /* Hapus sudut membulat di mobile untuk kesan full-width */
-        box-shadow: none; /* Hapus bayangan di mobile */
+        max-height: 250px;
+        border-radius: 0; 
+        box-shadow: none; 
     }
 
     .hero-text-content {
-        padding: 0 1rem; /* Tambah padding samping agar tidak terlalu mepet */
+        padding: 0 1rem;
     }
 
     .hero-text-content h1 {
         font-size: 2.2rem;
-        text-align: center; /* Judul di tengah */
+        text-align: center; 
     }
 
     .detail-badge {
-        margin: 0 auto 1.5rem auto; /* Tengah badge */
+        margin: 0 auto 1.5rem auto; 
     }
 
     .hero-text-content p {
@@ -479,7 +465,7 @@ section {
     }
 
     .detail-content-full {
-        padding: 0 1rem; /* Tambah padding samping */
+        padding: 0 1rem; 
     }
 
     .detail-content-full h3 {
@@ -492,7 +478,7 @@ section {
     }
 
     .detail-content-full .cta-button {
-        display: block; /* Tombol jadi full width di mobile */
+        display: block; 
         width: 90%;
         margin-left: auto;
         margin-right: auto;
@@ -508,10 +494,10 @@ footer {
     padding: 3rem 5%;
 }
 
-/* BARU: Style untuk konten 'Tentang Kami' di footer */
+
 .footer-content {
-    max-width: 700px; /* Batasi lebar teks agar mudah dibaca */
-    margin: 0 auto 1.5rem auto; /* (top, horizontal, bottom) */
+    max-width: 700px; 
+    margin: 0 auto 1.5rem auto;
 }
 
 .footer-content h3 {
@@ -522,12 +508,10 @@ footer {
 }
 
 .footer-content p {
-    color: #ccc; /* Buat teks paragraf sedikit lebih redup */
+    color: #ccc;
     line-height: 1.7;
     font-size: 0.95rem;
 }
-/* ------------------------------------------------ */
-
 footer .social-media {
     margin: 1.5rem 0;
 }
@@ -587,9 +571,6 @@ footer .copyright {
 
 /* ======== MEDIA QUERY (RESPONSIF) ======== */
 
-/* ================================== */
-/* ======== BARU: BOOKING FORM ======== */
-/* ================================== */
 #booking {
   background-color: var(--light-color);
 }
@@ -635,7 +616,7 @@ footer .copyright {
 }
 
 .form-group.full-width {
-  grid-column: 1 / -1; /* Mengambil seluruh lebar grid */
+  grid-column: 1 / -1; 
   text-align: center;
 }
 
@@ -647,13 +628,9 @@ footer .copyright {
 }
 
 /* ======== FOOTER ======== */
-/* ... (lanjutan kode CSS dari jawaban sebelumnya) ... */
 
-/* ======== MEDIA QUERY (RESPONSIF) ======== */
-/* Buat widget cuaca responsif di mobile */
 @media (max-width: 600px) {
     #weather-forecast-container {
-        /* Tumpuk kartu menjadi 1 kolom di layar kecil */
         grid-template-columns: 1fr; 
     }
 }
@@ -661,7 +638,7 @@ footer .copyright {
 @media (max-width: 768px) {
   /* ... (kode media query sebelumnya) ... */
 
-  /* BARU: Atur form menjadi 1 kolom di mobile */
+  
   .booking-form {
     grid-template-columns: 1fr;
   }
@@ -672,11 +649,6 @@ footer .copyright {
   .hero-content h1 {
     font-size: 2.5rem;
   }
-
-  /* Tampilkan hamburger menu */
- 
-
-
     .hamburger-menu {
         display: block;
         position: relative;
@@ -684,69 +656,65 @@ footer .copyright {
         cursor: pointer;
     }
 
-    /* GANTI TOTAL BLOK .nav-links ANDA DENGAN INI */
     .nav-links {
         display: flex;
         position: fixed; 
-        top: 95px; /* Sedikit lebih rendah dari navbar */
-        right: -320px; /* Posisi awal di luar layar (lebar 280px + margin) */
-        width: 280px;  /* Lebar menu */
+        top: 95px; 
+        right: -320px;
+        width: 280px; 
         
-        height: auto; /* Biarkan tingginya menyesuaikan konten */
-        max-height: calc(100vh - 110px); /* Batasi tinggi */
+        height: auto; 
+        max-height: calc(100vh - 110px);
         overflow-y: auto; 
         
-        background-color: white; /* Background putih */
+        background-color: white; 
         flex-direction: column;
-        padding: 1rem; /* Padding internal */
+        padding: 1rem; 
         z-index: 1001; 
         
         /* Efek visual 'card' */
-        border-radius: 15px; /* Sudut membulat */
-        box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* Bayangan */
-        border: 1px solid #eee; /* Garis tipis */
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        border: 1px solid #eee; 
         
         transition: right 0.4s ease-in-out;
     }
     
     /* GANTI TOTAL BLOK .nav-links.active ANDA DENGAN INI */
     .nav-links.active {
-        right: 20px; /* Geser masuk ke layar dengan margin 20px dari kanan */
+        right: 20px; 
     }
 
     .nav-links li {
-        margin: 0.5rem 0; /* Kurangi margin vertikal */
-        width: 100%; /* Agar link mengisi lebar menu */
-        text-align: left; /* Teks rata kiri */
+        margin: 0.5rem 0;
+        width: 100%; 
+        text-align: left;
     }
 
     .nav-links a {
-        color: var(--dark-color); /* Warna teks link */
-        display: block; /* Agar padding bisa diterapkan */
-        padding: 10px 12px; /* Padding di sekitar link */
-        border-radius: 8px; /* Sudut membulat untuk link */
+        color: var(--dark-color);
+        display: block; 
+        padding: 10px 12px;
+        border-radius: 8px;
         transition: background-color 0.2s ease;
-        font-weight: 600; /* Buat teks sedikit lebih tebal */
+        font-weight: 600; 
     }
     
     .nav-links a:hover {
-        background-color: #f0f0f0; /* Efek hover */
+        background-color: #f0f0f0;
     }
 
-    /* KEMBALIKAN GAYA UNTUK TOMBOL KONTAK */
-    .nav-links .nav-kontak {
-        /* Kembalikan gaya tombol CTA */
         background-color: var(--secondary-color);
         color: white;
-        text-align: center; /* Tengahkan teks di tombol */
+        text-align: center; 
     }
 
     .nav-links .nav-kontak:hover {
-        background-color: #d68f3b; /* Warna hover oranye */
+        background-color: #d68f3b;
         color: white;
     }
 
-    /* Pastikan efek garis bawah tidak muncul */
+    
     .nav-links .nav-kontak::after { 
         display: none;
     }
@@ -757,6 +725,7 @@ footer .copyright {
   }
 
   .tentang-container {
-    flex-direction: column; /* Tumpuk gambar dan teks */
+    flex-direction: column;
   }
 }
+
