@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
         lat = -6.8530;
         lon = 108.0632;
     } 
-    // === DATA YANG PERLU ANDA CARI ===
     else if (path.includes('jambu.html')) {
         mountainName = 'Gunung Jambu';
         lat = -6.8277556;
@@ -122,3 +121,4 @@ function getWeatherInfo(code) {
     return { desc: 'Berawan', icon: 'fas fa-cloud' };
 
 }
+
