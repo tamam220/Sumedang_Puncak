@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #2c5e2e; /* Hijau tua */
-  --secondary-color: #f3a847; /* Oranye/Kuning */
+  --primary-color: #2c5e2e; 
+  --secondary-color: #f3a847; 
   --light-color: #f4f4f4;
   --dark-color: #333333;
   --text-color: #555;
@@ -15,7 +15,7 @@
 }
 
 html {
-  scroll-behavior: smooth; /* Efek scroll halus saat klik nav-link */
+  scroll-behavior: smooth; 
 }
 
 body {
@@ -65,7 +65,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255,255,0.9); /* Hijau transparan */
+  background-color: rgba(255, 255,255,0.9); 
   padding: 1rem 5%;
   position: fixed;
   width: 100%;
@@ -82,18 +82,18 @@ section {
   text-decoration: none;
 }
 .nav-logo {
-    display: flex; /* Untuk mensejajarkan ikon dan teks */
-    align-items: center; /* Untuk memposisikan ikon dan teks di tengah vertikal */
-    font-size: 1rem; /* Ukuran teks logo */
+    display: flex; 
+    align-items: center;
+    font-size: 1rem;
     font-weight: 700;
     color: black;
     text-decoration: none;
 }
 
 .logo-icon {
-    height: 35px; /* Sesuaikan tinggi ikon */
-    margin-right: 10px; /* Jarak antara ikon dan teks */
-    filter: invert(100%); /* Membuat ikon hitam jadi putih agar terlihat di navbar hijau */
+    height: 35px; 
+    margin-right: 10px;
+    filter: invert(100%);
 }
 
 .nav-links {
@@ -113,7 +113,6 @@ section {
   position: relative;
 }
 
-/* Efek garis bawah pada link navigasi */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -142,11 +141,11 @@ section {
 }
 
 .nav-kontak::after {
-  display: none; /* Hilangkan efek hover garis bawah */
+  display: none; 
 }
 
 .hamburger-menu {
-  display: none; /* Sembunyikan di desktop */
+  display: none; 
   font-size: 1.8rem;
   color: black;
   cursor: pointer;
@@ -155,7 +154,6 @@ section {
 /* ======== HERO SECTION ======== */
 #hero {
   min-height: 100vh;
-  /* Ganti 'hero-background.jpg' dengan gambar pemandangan gunung */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/bg_index.png")
       no-repeat center center/cover;
@@ -165,7 +163,7 @@ section {
   align-items: center;
   text-align: center;
   color: white;
-  padding-top: 80px; /* Jarak dari navbar */
+  padding-top: 80px;
 }
 
 .hero-content h1 {
@@ -186,7 +184,6 @@ section {
 
 .card-container {
   display: grid;
-  /* Layout Grid Responsif */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
@@ -195,7 +192,7 @@ section {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  overflow: hidden; /* Agar gambar tidak keluar dari radius */
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -232,15 +229,13 @@ section {
   text-decoration: underline;
 }
 
-/* ================================== */
-/* ======== BARU: STYLE KONDISI CUACA ======== */
-/* ================================== */
+/* ======== STYLE KONDISI CUACA ======== */
 .weather-widget {
-    background: #f9f9f9; /* Latar belakang sedikit abu-abu */
+    background: #f9f9f9;
     border: 1px solid #eee;
     border-radius: 10px;
     padding: 1rem 1.5rem;
-    margin: 2.5rem 0; /* Jarak atas dan bawah */
+    margin: 2.5rem 0; 
 }
 .weather-widget h3 {
     margin-top: 0;
@@ -250,14 +245,12 @@ section {
 
 #weather-forecast-container {
     display: grid;
-    /* Buat 3 kolom di desktop */
     grid-template-columns: repeat(3, 1fr); 
     gap: 1rem;
     margin: 1rem 0;
 }
 
 .weather-loading {
-    /* Atur agar "Memuat..." di tengah dan mencakup 3 kolom */
     grid-column: 1 / -1; 
     text-align: center;
     padding: 2rem 0;
@@ -278,7 +271,7 @@ section {
     box-shadow: 0 8px 15px rgba(0,0,0,0.05);
 }
 
-/* Style khusus untuk 'Hari ini' (opsional) */
+
 .weather-day-card.today {
     background: #f0f5ff;
     border-color: #c2d9ff;
@@ -296,10 +289,9 @@ section {
 }
 .weather-day-card .weather-icon i {
     font-size: 2.5rem;
-    /* Gunakan warna oranye Anda */
     color: var(--secondary-color); 
 }
-/* Ubah ikon petir jadi kuning/oranye */
+
 .weather-day-card .weather-icon i.fa-bolt {
     color: #f3a847;
 }
@@ -323,7 +315,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px; /* Jarak antara ikon angin dan teks */
+    gap: 5px;
 }
 
 .weather-credit {
@@ -341,11 +333,9 @@ section {
 }
 
 .detail-img-header {
-    width: 50%; /* DIUBAH: Sesuai permintaan Anda */
-    height: 50%;  /* DISARANKAN: Agar gambar tidak distorsi */
+    width: 50%;
+    height: 50%;
     object-fit: cover;
-    
-    /* BARU: Kode ini untuk membuat gambar di tengah */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -636,9 +626,6 @@ footer .copyright {
 }
 
 @media (max-width: 768px) {
-  /* ... (kode media query sebelumnya) ... */
-
-  
   .booking-form {
     grid-template-columns: 1fr;
   }
@@ -679,8 +666,6 @@ footer .copyright {
         
         transition: right 0.4s ease-in-out;
     }
-    
-    /* GANTI TOTAL BLOK .nav-links.active ANDA DENGAN INI */
     .nav-links.active {
         right: 20px; 
     }
@@ -728,4 +713,5 @@ footer .copyright {
     flex-direction: column;
   }
 }
+
 
